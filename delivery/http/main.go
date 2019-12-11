@@ -32,7 +32,7 @@ func main() {
 	categoryServ := service.NewCategoryServiceImpl(categoryRepo)
 
 	adminCatgHandler := handler.NewAdminCategoryHandler(tmpl, categoryServ)
-	menuHandler := handler.NewMenuHandler(tmpl, categoryServ)
+	menuHandler := handler.NewMenuHandler(tmpl, categoryServ) // recieves sruct
 
 	fs := http.FileServer(http.Dir("ui/assets"))
 	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
