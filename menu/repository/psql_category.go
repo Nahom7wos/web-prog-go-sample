@@ -17,7 +17,7 @@ func NewCategoryRepositoryImpl(Conn *sql.DB) *CategoryRepositoryImpl {
 	return &CategoryRepositoryImpl{conn: Conn}
 }
 
-// Categories returns all cateogories from the database
+// (conn struct)Categories() returns list of all cateogories from the database
 func (cri *CategoryRepositoryImpl) Categories() ([]entity.Category, error) {
 
 	rows, err := cri.conn.Query("SELECT * FROM categories;")
@@ -26,10 +26,10 @@ func (cri *CategoryRepositoryImpl) Categories() ([]entity.Category, error) {
 	}
 	defer rows.Close()
 
-	ctgs := []entity.Category{}
+	ctgs := []entity.Category{} // a list of Category from entity
 
 	for rows.Next() {
-		category := entity.Category{}
+		category := entity.Category{} // holder sturct
 		err = rows.Scan(&category.ID, &category.Name, &category.Description, &category.Image)
 		if err != nil {
 			return nil, err

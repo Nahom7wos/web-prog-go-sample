@@ -14,7 +14,7 @@ import (
 
 func main() {
 
-	dbconn, err := sql.Open("postgres", "postgres://app_admin:P@$$w0rdD2@localhost/restaurantdb?sslmode=disable")
+	dbconn, err := sql.Open("postgres", "postgres://postgres:Postgre_1@localhost/restaurantdb?sslmode=disable")
 
 	if err != nil {
 		panic(err)
@@ -26,15 +26,15 @@ func main() {
 		panic(err)
 	}
 
-	tmpl := template.Must(template.ParseGlob("ui/templates/*"))
+	tmpl := template.Must(template.ParseGlob("../../ui/templates/*"))
 
-	categoryRepo := repository.NewCategoryRepositoryImpl(dbconn)
+	categoryRepo := repository.NewCategoryRepositoryImpl(dbconn)  // now struct CategoryRepositoryImpl{conn: dbconn}
 	categoryServ := service.NewCategoryServiceImpl(categoryRepo)
 
 	adminCatgHandler := handler.NewAdminCategoryHandler(tmpl, categoryServ)
 	menuHandler := handler.NewMenuHandler(tmpl, categoryServ) // recieves sruct
 
-	fs := http.FileServer(http.Dir("ui/assets"))
+	fs := http.FileServer(http.Dir("../../ui/assets"))
 	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
 
 	http.HandleFunc("/", menuHandler.Index)
