@@ -29,9 +29,9 @@ func main() {
 	//createTables(dbconn)
 
 	csrfSignKey := []byte(rtoken.GenerateRandomID(32))
-	tmpl := template.Must(template.ParseGlob("ui/templates/*"))
+	tmpl := template.Must(template.ParseGlob("../../ui/templates/*"))
 
-	dbconn, err := gorm.Open("postgres", "postgres://postgres:P@$$w0rdD2@localhost/restaurantdb?sslmode=disable")
+	dbconn, err := gorm.Open("postgres", "postgres://postgres:Postgre_1@localhost/airlinesdb?sslmode=disable")
 
 	if err != nil {
 		panic(err)
