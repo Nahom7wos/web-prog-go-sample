@@ -5,14 +5,14 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/betsegawlemma/restaurant/delivery/http/handler"
-	"github.com/betsegawlemma/restaurant/entity"
-	mrepim "github.com/betsegawlemma/restaurant/menu/repository"
-	msrvim "github.com/betsegawlemma/restaurant/menu/service"
-	"github.com/betsegawlemma/restaurant/rtoken"
+	"github.com/betsegawlemma/web-prog-go-sample/delivery/http/handler"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	mrepim "github.com/betsegawlemma/web-prog-go-sample/menu/repository"
+	msrvim "github.com/betsegawlemma/web-prog-go-sample/menu/service"
+	"github.com/betsegawlemma/web-prog-go-sample/rtoken"
 
-	urepimp "github.com/betsegawlemma/restaurant/user/repository"
-	usrvimp "github.com/betsegawlemma/restaurant/user/service"
+	urepimp "github.com/betsegawlemma/web-prog-go-sample/user/repository"
+	usrvimp "github.com/betsegawlemma/web-prog-go-sample/user/service"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 )

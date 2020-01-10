@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/betsegawlemma/restaurant/entity"
-	"github.com/betsegawlemma/restaurant/order"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/order"
 	"github.com/jinzhu/gorm"
 )
 

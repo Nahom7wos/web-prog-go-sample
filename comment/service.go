@@ -1,6 +1,6 @@
 package comment
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 // CommentService specifies customer comment related service
 type CommentService interface {

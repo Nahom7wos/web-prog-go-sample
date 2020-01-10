@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/betsegawlemma/restaurant/entity"
-	"github.com/betsegawlemma/restaurant/form"
-	"github.com/betsegawlemma/restaurant/menu"
-	"github.com/betsegawlemma/restaurant/rtoken"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/form"
+	"github.com/betsegawlemma/web-prog-go-sample/menu"
+	"github.com/betsegawlemma/web-prog-go-sample/rtoken"
 )
 
 // AdminCategoryHandler handles category handler admin requests

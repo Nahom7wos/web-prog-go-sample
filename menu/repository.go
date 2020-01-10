@@ -1,6 +1,6 @@
 package menu
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 // CategoryRepository specifies food menu category database operations
 type CategoryRepository interface {

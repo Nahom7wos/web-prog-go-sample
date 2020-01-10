@@ -1,6 +1,6 @@
 package user
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 // UserRepository specifies application user related database operations
 type UserRepository interface {

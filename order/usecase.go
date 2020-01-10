@@ -1,6 +1,6 @@
 package order
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 //OrderService specifies customer menu order related services
 type OrderService interface {

@@ -3,8 +3,8 @@ package repository
 import (
 	"errors"
 
-	"github.com/betsegawlemma/restaurant/entity"
-	"github.com/betsegawlemma/restaurant/menu"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/menu"
 	"github.com/jinzhu/gorm"
 )
 

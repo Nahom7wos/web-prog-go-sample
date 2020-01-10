@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/betsegawlemma/restaurant/entity"
-	"github.com/betsegawlemma/restaurant/form"
-	"github.com/betsegawlemma/restaurant/menu"
-	"github.com/betsegawlemma/restaurant/rtoken"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/form"
+	"github.com/betsegawlemma/web-prog-go-sample/menu"
+	"github.com/betsegawlemma/web-prog-go-sample/rtoken"
 )
 
 // MenuHandler handles menu related requests

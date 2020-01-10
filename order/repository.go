@@ -1,6 +1,6 @@
 package order
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 // OrderRepository specifies customer menu order related database operations
 type OrderRepository interface {

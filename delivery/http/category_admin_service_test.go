@@ -9,10 +9,10 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/betsegawlemma/restaurant/delivery/http/handler"
-	"github.com/betsegawlemma/restaurant/entity"
-	"github.com/betsegawlemma/restaurant/menu/repository"
-	"github.com/betsegawlemma/restaurant/menu/service"
+	"github.com/betsegawlemma/web-prog-go-sample/delivery/http/handler"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/menu/repository"
+	"github.com/betsegawlemma/web-prog-go-sample/menu/service"
 )
 
 func TestAdminCategories(t *testing.T) {

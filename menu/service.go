@@ -1,6 +1,6 @@
 package menu
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 // CategoryService specifies food menu category services
 type CategoryService interface {

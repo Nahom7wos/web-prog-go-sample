@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"errors"
 
-	"github.com/betsegawlemma/restaurant/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
 )
 
 // CategoryRepositoryImpl implements the menu.CategoryRepository interface

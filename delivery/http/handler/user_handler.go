@@ -8,15 +8,15 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/betsegawlemma/restaurant/permission"
-	"github.com/betsegawlemma/restaurant/rtoken"
+	"github.com/betsegawlemma/web-prog-go-sample/permission"
+	"github.com/betsegawlemma/web-prog-go-sample/rtoken"
 
-	"github.com/betsegawlemma/restaurant/entity"
-	"github.com/betsegawlemma/restaurant/session"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/session"
 	"golang.org/x/crypto/bcrypt"
 
-	"github.com/betsegawlemma/restaurant/form"
-	"github.com/betsegawlemma/restaurant/user"
+	"github.com/betsegawlemma/web-prog-go-sample/form"
+	"github.com/betsegawlemma/web-prog-go-sample/user"
 )
 
 // UserHandler handler handles user related requests

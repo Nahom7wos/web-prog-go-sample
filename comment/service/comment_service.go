@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/betsegawlemma/restaurant/comment"
-	"github.com/betsegawlemma/restaurant/entity"
+	"github.com/betsegawlemma/web-prog-go-sample/comment"
+	"github.com/betsegawlemma/web-prog-go-sample/entity"
 )
 
 // CommentService implements menu.CommentService interface

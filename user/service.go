@@ -1,6 +1,6 @@
 package user
 
-import "github.com/betsegawlemma/restaurant/entity"
+import "github.com/betsegawlemma/web-prog-go-sample/entity"
 
 // UserService specifies application user related services
 type UserService interface {
